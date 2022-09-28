@@ -8,5 +8,5 @@ let szin = document.getElementById("szinezes").value;
 
 function beallit()
 {
-    document.getSelection
+    document.getElementById("kep_elhelyez").src = kep_url;
 }
