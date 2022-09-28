@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("kep").value,parseFloat(document.getElementById("szelesseg").value),parseFloat(document.getElementById("magassag").value),document.getElementById("szinezes").value})();
