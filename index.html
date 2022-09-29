@@ -3,14 +3,11 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Képkeret</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet'  media='screen' href='src/main.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src='main.js'></script>
 </head>
 <body>
     <div class="container-fluid">
@@ -19,20 +16,20 @@
             <div class="col-md-3 col-lg-3 col-xl-3">
                 <p>link</p>
                 <label for="img"></label>
-                <input type="text" name="img" id="kep" >
+                <input type="url" name="img" id="kep">
                 
                 
             </div>
             <div class="col-md-3 col-lg-3 col-xl-3">
                 <p>szélesség(pixelben)</p>
                 <input type="number" name="width" id="szelesseg">
-                <label for="pixel" f></label>
+                <label for="width"></label>
             </div>
 
             <div class="col-md-3 col-lg-3 col-xl-3">
-                <p>Magassag</p>
-                <input type="number" name="height" id="magassag">
-                <label for="height"></label>
+                <p>Képkeret</p>
+                <input type="number" name="vastagsag" id="keret">
+                <label for="vastagsag"></label>
             </div>
 
             <div class="col-md-3 col-lg-3 col-xl-3">
@@ -42,12 +39,12 @@
             </div>
             <!--<button type="submit"></button>-->
         </div>
-    </div>
+    </div><br>
 
     <div class="modositott_kep">
-        <img src="" alt="" id="kep_elhelyez">
+        <img id="kep_elhelyez" src="/cica.jpeg" width="120px" style="border: 1.5px solid blue;">
     </div>
-
+    <br>
 
     <footer>
         <div class="container-fluid">
@@ -59,12 +56,12 @@
                     <p>2/14T</p>
                 </div>
                 <div class="col-md-4 col-lg-4 col-xl-4">
-                    <button>Szin</button>
+                    <button id="darkmode">Szin</button>
                 </div>
             </div>
         </div>
     </footer>
     
-    <script src='main.js'></script>
+    
 </body>
 </html>
