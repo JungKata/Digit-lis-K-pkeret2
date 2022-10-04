@@ -1,5 +1,5 @@
 
-
+import './style.css';
 
 function beallit_url(e)
 {
